@@ -1,0 +1,50 @@
+1. Open Ananconda Command Window (Menu >> Ananconda)
+2. type d:
+3. type cd developer\addressbook
+4. type: python flask3.py
+
+5. Open browser
+6. type: http://127.0.0.1:5000/
+
+
+---------------- SCRIPT --------------------------
+
+CREATE TABLE `student` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `fname` varchar(45) DEFAULT NULL,
+  `classname` varchar(45) DEFAULT NULL,
+  `section` varchar(45) DEFAULT NULL,
+  `parentcontact` varchar(45) DEFAULT NULL,
+  `alternatecontact` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+CREATE TABLE `applicationuser` (
+  `userid` int DEFAULT NULL,
+  `loginid` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `username` tinytext,
+  `password` tinytext
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+----------------------------------------
+
+1. Create database in the name of "addrbook"
+2. go to database
+3. copy the abve script and run 
+
+4. copy addressbook folder from stick to your shool computer
+5. Open dbServices.py file
+    go and replace password on all the places
+6. go to "Ananconda prompt"
+
+anaconda commands
+1. Pip3 install MySQL-connector-python
+2. Run the main flask3.py with the directory
+
+
+http://127.0.0.1:5000/home
